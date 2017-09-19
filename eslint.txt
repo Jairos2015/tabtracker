@@ -1,0 +1,95 @@
+Your environment has been set up for using Node.js 7.6.0 (x64) and npm.
+
+C:\Users\jairo>cd doc*
+
+C:\Users\jairo\Documents>cd github
+
+C:\Users\jairo\Documents\GitHub>dir
+ El volumen de la unidad C es ACER
+ El número de serie del volumen es: 064E-1308
+
+ Directorio de C:\Users\jairo\Documents\GitHub
+
+18/09/2017  13:05    <DIR>          .
+18/09/2017  13:05    <DIR>          ..
+18/01/2016  16:06    <DIR>          %HOMEDRIVE%%HOMEPATH%
+09/12/2015  14:16    <DIR>          ejemplo4
+13/04/2016  11:49    <DIR>          esp_mqtt
+09/12/2015  14:33    <DIR>          marqueTTronica
+21/07/2017  07:15    <DIR>          rf95_clientu8glib_AM2302
+21/07/2017  07:14    <DIR>          rf95_serveru8glib_AM2302
+18/09/2017  15:50    <DIR>          tabtracker
+               0 archivos              0 bytes
+               9 dirs  163.635.818.496 bytes libres
+
+C:\Users\jairo\Documents\GitHub>cd tabtracker
+
+C:\Users\jairo\Documents\GitHub\tabtracker>cd server
+
+C:\Users\jairo\Documents\GitHub\tabtracker\server>npm run dev
+openssl config failed: error:02001003:system library:fopen:No such process
+npm ERR! missing script: dev
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\jairo\AppData\Roaming\npm-cache\_logs\2017-09-19T01_48_52_723Z-debug.log
+
+C:\Users\jairo\Documents\GitHub\tabtracker\server>npm start
+openssl config failed: error:02001003:system library:fopen:No such process
+
+> server@1.0.0 prestart C:\Users\jairo\Documents\GitHub\tabtracker\server
+> eslint **/*.js
+
+Cannot read config file: C:\Users\jairo\Documents\GitHub\tabtracker\server\.eslintrc.js
+Error: Unexpected token :
+C:\Users\jairo\Documents\GitHub\tabtracker\server\.eslintrc.js:2
+    "extends": "eslint:recommended"
+             ^
+
+SyntaxError: Unexpected token :
+    at createScript (vm.js:74:10)
+    at Object.runInThisContext (vm.js:116:10)
+    at Module._compile (module.js:537:28)
+    at Object.Module._extensions..js (module.js:584:10)
+    at Module.load (module.js:507:32)
+    at tryModuleLoad (module.js:470:12)
+    at Function.Module._load (module.js:462:3)
+    at Module.require (module.js:517:17)
+    at require (internal/module.js:11:18)
+    at module.exports (C:\Users\jairo\Documents\GitHub\tabtracker\server\node_modules\require-uncached\index.js:28:9)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! server@1.0.0 prestart: `eslint **/*.js`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the server@1.0.0 prestart script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\jairo\AppData\Roaming\npm-cache\_logs\2017-09-19T01_49_25_539Z-debug.log
+
+C:\Users\jairo\Documents\GitHub\tabtracker\server>npm start
+openssl config failed: error:02001003:system library:fopen:No such process
+
+> server@1.0.0 start C:\Users\jairo\Documents\GitHub\tabtracker\server
+> node node_modules/nodemon/bin/nodemon.js src/app.js --exec
+
+openssl config failed: error:02001003:system library:fopen:No such process >>>> set OPENSSL_CONF=
+[nodemon] 1.12.1
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node src/app.js`
+Hola
+[nodemon] clean exit - waiting for changes before restart
+
+Para error de OpenSSl
+set OPENSSL_CONF=
+
+Para eslint init >> configurar eslint init
+
+node ./node_modules/eslint/bin/eslint.js --init
+
+
+
+Como quiere configurar eslint? >> Use una guia popular
+que estilo seguir?>>> standard
+que formato usar?>>>javascript
